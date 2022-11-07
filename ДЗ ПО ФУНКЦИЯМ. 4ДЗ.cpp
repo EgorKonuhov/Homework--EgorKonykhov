@@ -40,6 +40,12 @@ using namespace std;
 //        return -1;
 //    return ((num / 100000) + ((num / 10000) % 10) + ((num / 1000) % 10)) == (((num / 100) % 10) + ((num / 10) % 10) + (num % 10));
 //}
+/*int Lin (int a[], int size, int key){
+   for(int i=0;i<size;i++)
+       if(a[i] == key)
+           return i;
+   return -1;
+}*/
 int main()
 { 
     setlocale(0, "Russian");
@@ -63,6 +69,18 @@ int main()
         cout << "Счастливое" << endl;
     else if (res == 0)
         cout << "НЕ счастливое" << endl;*/
-    cout << "Home task 5.4";
+    /*cout << "Home task 5.1, массив";
+ const int aSize=100;
+   int a[aSize], Key, el;
+   for(int x=0;x<aSize;x++)
+           a[x]=2*x;
+	cout<<"Введите слово:  ";
+	cin>>Key;
+	el=Lin(a, aSize, Key);
+	if(el!=-1)
+        cout<<"\nСлово было найдено в элементе "<<el<<'\n';*/
+ cout << "Home task 5.2,массив";
+ 
+ 
 
 }
