@@ -46,6 +46,23 @@ using namespace std;
            return i;
    return -1;
 }*/
+/*int binsearch(int x, int v[], int n)
+{
+    int low, high, mid;
+ 
+    low = 0;
+    high = n;
+    while(low <= high) {
+        mid = (low + high) / 2; 
+        if(x < v[mid])              
+            high = mid - 1;
+        else if(x > v[mid])
+            low = mid + 1;
+        else
+            return mid;
+    }
+    return -1;
+}*/
 int main()
 { 
     setlocale(0, "Russian");
@@ -79,7 +96,20 @@ int main()
 	el=Lin(a, aSize, Key);
 	if(el!=-1)
         cout<<"\nСлово было найдено в элементе "<<el<<'\n';*/
- cout << "Home task 5.2,массив";
+ /*cout << "Home task 5.2,массив";
+	int i, ret, num, size = 6, a[6];
+    for(i = 0; i < size; i++) {
+        a[i] = i;
+        printf("d", a[i]);
+    }
+    num = 1;
+    if( (ret = binsearch(num, a, size)) < 0)
+        printf("\nЧисло отсутствует в массиве\n", num);
+    else
+        printf("\nЧисло  находится в a[]\n", num, ret);
+    return 0;
+}*/
+
  
  
 
