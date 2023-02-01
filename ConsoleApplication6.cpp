@@ -1,0 +1,72 @@
+﻿#include <iostream>
+#include <time.h>
+#include <stdlib.h>
+#include <string>
+#include <conio.h>
+#include <iomanip>
+#include <Windows.h>
+#include <fstream>
+
+using namespace std;
+class TOCHKA
+{
+private:
+	int x[1];
+	int y[1];
+	int z[1];
+public:
+	TOCHKA(const int* x, const int* y, const int* z)
+	{
+		for (int i = 0; i < 1; i++)
+		{
+			TOCHKA::x[i] = *(x + i);
+		}
+		for (int i = 0; i < 1; i++)
+		{
+			TOCHKA::y[i] = *(y + i);
+		}
+		for (int i = 0; i < 1; i++)
+		{
+			TOCHKA::z[i] = *(z + i);
+		}
+	}
+	void set_x(int point_x)
+	{
+		*x = point_x;
+	}
+	int get_x()
+	{
+		return *x;
+	}
+	void set_y(int point_y)
+	{
+		*y = point_y;
+	}
+	int get_y()
+	{
+		return *y;
+	}
+	void set_z(int point_z)
+	{
+		*z = point_z;
+	}
+	int get_z()
+	{
+		return *z;
+	}
+};
+int main()
+{
+	setlocale(0, " ");
+	srand(time(NULL));
+	int x;
+	int y;
+	int z;
+	TOCHKA punkt;
+	punkt.set_x(20);
+	punkt.get_x();
+	punkt.set_y(13);
+	punkt.get_y();
+	punkt.set_z(36);
+	punkt.get_z();
+}
